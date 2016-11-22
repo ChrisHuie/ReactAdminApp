@@ -1,18 +1,16 @@
 import React from 'react';
 import {Link} from 'react-router';
 
-const HomePage = () => {
-  return (
-    <div>
-      <h1>React Slingshot</h1>
-
-      <h2>Get Started</h2>
-      <ol>
-        <li>Review the <Link to="fuel-savings">demo app</Link></li>
-        <li>Remove the demo and start coding: npm run remove-demo</li>
-      </ol>
-    </div>
-  );
-};
+class HomePage extends React.Component {
+  render(){
+    return (
+      <div className="jumbotron">
+        <h1>My App Administration</h1>
+        <p>React, Redux, and React Router in es6 for ultra-responsive web apps</p>
+        <Link to="about" className="btn btn-primary btn-lg">Learn More</Link>
+      </div>
+    );
+  }
+}
 
 export default HomePage;
