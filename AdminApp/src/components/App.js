@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import Header from './common/Header'
 
 // This is a class-based component because the current
 // version of hot reloading won't hot reload a stateless
@@ -7,7 +8,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="container-fluid">
-        <p>Header here...</p>
+        <Header/>
         {this.props.children}
       </div>
     );
